@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>pl.ds.websight</groupId>
     <artifactId>websight-package-parent</artifactId>
-    <version>2</version>
-    <relativePath></relativePath>
+    <version>4</version>
+    <relativePath />
   </parent>
   <groupId>pl.ds.websight</groupId>
   <artifactId>websight-system-user-provider-config</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>content-package</packaging>
   <name>WebSight System User Provider Config</name>
   <description>User Provider Configuration contains OSGi configs for functionality.</description>
@@ -37,20 +36,13 @@
     <connection>scm:git:ssh://github.com:DS-WebSight/websight-system-user-provider.git</connection>
     <developerConnection>scm:git:ssh://github.com:DS-WebSight/websight-system-user-provider.git</developerConnection>
     <url>https://github.com/DS-WebSight/websight-system-user-provider</url>
+    <tag>1.0.2</tag>
   </scm>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>filevault-package-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <configuration>
-          <licenseName>agpl_v3</licenseName>
-          <licenseFile>${project.basedir}/LICENSE</licenseFile>
-        </configuration>
       </plugin>
     </plugins>
   </build>
